@@ -1,0 +1,1 @@
+var ImgLottie = 'lib/src/assets/lottie/slide1.json';
