@@ -1,0 +1,1 @@
+export 'wellcome/wellcome_view.dart';
