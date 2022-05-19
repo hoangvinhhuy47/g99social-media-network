@@ -9,5 +9,6 @@ var IMG_CALL = 'lib/src/assets/images/img_call.png';
 var IMG_SLACK = 'lib/src/assets/images/img_slack.png';
 var IMG_LOGIN_LOGO = 'lib/src/assets/images/img_login_logo.png';
 var IMG_LOCK = 'lib/src/assets/images/img_lock.svg';
+var IMG_OTP = 'lib/src/assets/images/img_otp.svg';
 var IMG_SIGN = 'lib/src/assets/images/img_sign.png';
 var IMG_EDIT = 'lib/src/assets/images/img_edit.png';

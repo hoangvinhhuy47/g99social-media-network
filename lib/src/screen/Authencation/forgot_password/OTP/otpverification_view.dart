@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:g99socialmedia/src/assets/images/index.dart';
+import 'package:g99socialmedia/src/screen/Authencation/forgot_password/ResetPassWord/resetpassword_view.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 import 'package:g99socialmedia/src/base/TextStyle/TextStyle.dart';
 import 'package:g99socialmedia/src/styles/colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:transition/transition.dart';
+
 class OTPVerification_Screen extends StatefulWidget {
   State<OTPVerification_Screen> createState() => _OTPVerification_Screen();
 }
@@ -50,10 +53,11 @@ class _OTPVerification_Screen extends State<OTPVerification_Screen> {
                       height: 5.h,
                     ),
                     textFieldBold('+84 901 909 514', 15.sp, colorBlack),
-                    SizedBox(height: 50.h,),
+                    SizedBox(
+                      height: 50.h,
+                    ),
                     SizedBox(
                       width: 350.w,
-                      height: 50.h,
                       child: PinCodeTextField(
                           appContext: context,
                           length: 5,
@@ -76,18 +80,20 @@ class _OTPVerification_Screen extends State<OTPVerification_Screen> {
                     Container(
                       width: 350.w,
                       alignment: Alignment.centerRight,
-                      child: textFieldUnderLine('Resend OTP', 13.sp, colorBlack),
+                      child:
+                          textFieldUnderLine('Resend OTP', 13.sp, colorBlack),
                     ),
                     SizedBox(
                       height: 50.h,
                     ),
                     GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         Navigator.push(
                             context,
                             Transition(
                                 child: ResetPassword(),
-                                transitionEffect: TransitionEffect.RIGHT_TO_LEFT,
+                                transitionEffect:
+                                    TransitionEffect.RIGHT_TO_LEFT,
                                 curve: Curves.linear));
                       },
                       child: Container(
@@ -101,7 +107,6 @@ class _OTPVerification_Screen extends State<OTPVerification_Screen> {
                         child: textFieldBold('Submit', 14.sp, colorWhite),
                       ),
                     ),
-
                   ],
                 ),
               ),

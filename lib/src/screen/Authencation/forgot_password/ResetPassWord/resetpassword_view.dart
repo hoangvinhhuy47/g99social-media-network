@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:g99socialmedia/src/assets/images/index.dart';
 import 'package:g99socialmedia/src/base/TextStyle/TextStyle.dart';
 import 'package:g99socialmedia/src/screen/Authencation/index.dart';
 import 'package:g99socialmedia/src/styles/colors.dart';
@@ -103,6 +104,7 @@ class VerificationSuccessfull extends StatelessWidget {
         builder: (context) {
           ScreenUtil.setContext(context);
           return Scaffold(
+            backgroundColor: colorWhite,
             body: Center(
               child: Lottie.network('https://assets3.lottiefiles.com/packages/lf20_XY61yC.json',width: 250.w,height: 250.h,),
             ),

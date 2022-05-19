@@ -55,3 +55,18 @@ Text textFieldOverLine(String value, double size, Color colorText) {
         color: colorText),
   );
 }
+Text textFieldUnderLine(String value, double size, Color colorText) {
+  return Text(
+    value,
+    textAlign: TextAlign.center,
+    maxLines: 2,
+    style: TextStyle(
+        decoration: TextDecoration.underline,
+        fontSize: size,
+        fontWeight: FontWeight.w300,
+        fontStyle: FontStyle.normal,
+        fontFamily: 'Poppins',
+        color: colorText),
+  );
+}
+

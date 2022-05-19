@@ -117,12 +117,12 @@ class _SignUpScreen extends State<SignUpScreen> {
                 decoration: TextDecoration.underline),
           ),
           TextSpan(
-            text: ' and ',
+            text: ' and\n ',
             style: s(context,
                 fontWeight: FontWeight.w400, color: colorBlack, fontSize: 12),
           ),
           TextSpan(
-            text: 'Privacy \n Policy',
+            text: 'Privacy Policy',
             style: s(context,
                 fontWeight: FontWeight.w700,
                 color: colorBlack,
