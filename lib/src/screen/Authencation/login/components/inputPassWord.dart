@@ -4,6 +4,8 @@ import 'package:g99socialmedia/src/base/index.dart';
 import 'package:g99socialmedia/src/styles/colors.dart';
 
 class InputPassword_Screen extends StatelessWidget {
+  const InputPassword_Screen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Stack(

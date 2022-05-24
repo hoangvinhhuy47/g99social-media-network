@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:g99socialmedia/src/assets/images/index.dart';
 import 'package:g99socialmedia/src/components/border_outline.dart';
-import 'package:g99socialmedia/src/screen/home/home_view.dart';
+import 'package:g99socialmedia/src/screen/main_activity/main_activity_view.dart';
 import 'package:transition/transition.dart';
 import 'package:g99socialmedia/src/base/TextStyle/TextStyle.dart';
 import 'package:g99socialmedia/src/styles/colors.dart';
@@ -43,7 +43,7 @@ class _SignUpCatoryScreen extends State<SignUpCatoryScreen> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
                               image:
-                                  DecorationImage(image: AssetImage(IMG_SIGN))),
+                                 const  DecorationImage(image: AssetImage(IMG_SIGN))),
                         ),
                         const SizedBox(
                           width: 5,
@@ -70,7 +70,7 @@ class _SignUpCatoryScreen extends State<SignUpCatoryScreen> {
                         Navigator.push(
                             context,
                             Transition(
-                                child:  HomeScreen(),
+                                child:  const MainActivityScreen(),
                                 transitionEffect:
                                 TransitionEffect.FADE,
                                 curve: Curves.linear));

@@ -43,7 +43,7 @@ class _SignUpSuccessfullScreen extends State<SignUpSuccessfullScreen> {
                         width: 250.w,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(250),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                                 image: AssetImage(IMG_SIGN),
                                 fit: BoxFit.cover)),
                       ),

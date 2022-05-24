@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 Color colorBlue = HexColor('#40BFFF');
 Color colorWhite =HexColor('#FFFFFF');
@@ -7,3 +8,4 @@ Color colorGrey = HexColor('#9098B1');
 Color colorLight = HexColor('#EBF0FF');
 Color colorRed = HexColor('#FB7181');
 Color colorBlack = HexColor('#000000');
+const Color colorPrimary = Colors.white12;

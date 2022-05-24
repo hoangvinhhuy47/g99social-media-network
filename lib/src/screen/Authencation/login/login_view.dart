@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:g99socialmedia/src/assets/images/index.dart';
+import 'package:g99socialmedia/src/base/Button/button_item.dart';
 import 'package:g99socialmedia/src/base/TextStyle/TextStyle.dart';
 import 'package:g99socialmedia/src/screen/Authencation/forgot_password/forgotpassword_view.dart';
 import 'package:g99socialmedia/src/screen/Authencation/signup/signup_view.dart';
+import 'package:g99socialmedia/src/screen/main_activity/main_activity_view.dart';
 
 import 'package:g99socialmedia/src/styles/colors.dart';
 import 'package:transition/transition.dart';
@@ -28,8 +30,8 @@ class LoginScreen extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  SizedBox(
-                    height: 150.h,
+                  const SizedBox(
+                    height: 150,
                   ),
                   Image.asset(
                     IMG_LOGIN_LOGO,
@@ -37,25 +39,25 @@ class LoginScreen extends StatelessWidget {
                     width: 50.w,
                     color: colorBlack,
                   ),
-                  SizedBox(
-                    height: 25.h,
+                  const SizedBox(
+                    height: 25,
                   ),
                   textFieldBold('WellCome Back', 25.sp, colorBlack),
-                  SizedBox(
-                    height: 15.h,
+                  const SizedBox(
+                    height: 15,
                   ),
                   textFieldRegular('Enter your detail to proceed further.',
                       15.sp, colorGrey, TextAlign.center),
-                  SizedBox(
-                    height: 80.h,
+                  const SizedBox(
+                    height: 80,
                   ),
-                  InputEmail_Screen(),
-                  SizedBox(
-                    height: 15.h,
+                  const InputEmail_Screen(),
+                  const SizedBox(
+                    height: 15,
                   ),
-                  InputPassword_Screen(),
-                  SizedBox(
-                    height: 15.h,
+                  const InputPassword_Screen(),
+                  const SizedBox(
+                    height: 15,
                   ),
                   SizedBox(
                     width: 300.w,
@@ -84,7 +86,15 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(
                     height: 60.h,
                   ),
-                  GestureDetector(
+                  InkClickItem(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          Transition(
+                              child: const MainActivityScreen(),
+                              transitionEffect: TransitionEffect.FADE,
+                              curve: Curves.linear));
+                    },
                     child: Container(
                       width: 300.w,
                       height: 50.h,

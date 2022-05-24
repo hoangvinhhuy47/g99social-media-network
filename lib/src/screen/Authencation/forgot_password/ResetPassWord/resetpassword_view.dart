@@ -17,13 +17,13 @@ class _ResetPassword extends State<ResetPassword> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-        designSize: Size(375, 812),
+        designSize: const Size(375, 812),
         splitScreenMode: true,
         builder: (context) {
           ScreenUtil.setContext(context);
           return Scaffold(
             backgroundColor: colorWhite,
-            body: Container(
+            body: SizedBox(
               height: 812.h,
               width: 375.w,
               child: SingleChildScrollView(
@@ -52,13 +52,13 @@ class _ResetPassword extends State<ResetPassword> {
                     SizedBox(
                       height: 15.h,
                     ),
-                    InputResetPassWord(
+                    const InputResetPassWord(
                       inputTitle: 'New PassWord',
                     ),
                     SizedBox(
                       height: 15.h,
                     ),
-                    InputResetPassWord(
+                    const  InputResetPassWord(
                       inputTitle: 'Confirm PassWord',
                     ),
                     SizedBox(
@@ -112,11 +112,11 @@ class VerificationSuccessfull extends StatelessWidget {
         });
   }
   _onGoToLogin(BuildContext context){
-    new Future.delayed( Duration(seconds: 3), () {
+      Future.delayed( const  Duration(seconds: 3), () {
       Navigator.push(
           context,
           Transition(
-              child: LoginScreen(),
+              child: const LoginScreen(),
               transitionEffect:
               TransitionEffect.FADE,
               curve: Curves.linear));

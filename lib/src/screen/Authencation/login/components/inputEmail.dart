@@ -4,9 +4,11 @@ import 'package:g99socialmedia/src/base/index.dart';
 import 'package:g99socialmedia/src/styles/colors.dart';
 
 class InputEmail_Screen extends StatelessWidget {
+  const InputEmail_Screen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 300.w,
       height: 55.h,
       child: TextField(
